@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "blue-100": "#1B6392",
+        "warning-100": "#F3DE6D",
+      },
+      fontFamily: {
+        sans: ["Public Sans", "sans-serif"],
+      },
+    },
+
+    plugins: [],
   },
-  plugins: [],
 };

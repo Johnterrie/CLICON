@@ -3,7 +3,7 @@ import NavBar from "../component/NavBar";
 
 const Homepage = () => {
   return (
-    <div className="border-2 border-black w-10">
+    <div className="max-w-screen max-h-screen font-sans">
       <NavBar />
     </div>
   );

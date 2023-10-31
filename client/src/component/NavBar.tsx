@@ -1,4 +1,8 @@
 import React from "react";
+import Logo from "../../src/assests/Logo.png";
+import Heart from "../../src/assests/Heart.png";
+import ShoppingCart from "../../src/assests/ShoppingCartSimple.png";
+import User from "../../src/assests/User.png";
 import {
   FaLongArrowAltRight,
   FaTwitter,
@@ -42,10 +46,12 @@ const NavBar = () => {
             Welcome to Clicon online eCommerce store.
           </div>
 
-          <div className="flex border-red-400 w-2/5">
-            <div className="h-full w-3/5 flex items-center">
-              <span className="flex items-center"> Follow us: </span>
-              <span className="flex h-3/4 border-r border-grey-100 pr-5 ml-5  w-2/6 text-xl justify-between items-center">
+          <div className="flex justify-end w-3/5">
+            <div className="h-full w-3/5 flex justify-center items-center">
+              <span className="flex  items-center w-2/6 justify-center ">
+                Follow us:
+              </span>
+              <span className="flex h-3/4 border-r pr-5 ml-5  w-full text-xl justify-between items-center">
                 <FaTwitter />
                 <FaFacebook />
                 <FaPinterestP />
@@ -55,24 +61,39 @@ const NavBar = () => {
               </span>
             </div>
 
-            <div className="flex gap-3 item-center border border-green">
-              <span className="flex item-center">
+            <div className="flex w-1/4 font-sans font-thin justify-end">
+              <div className="flex text-sm h-full w-2/4 gap-2 justify-center items-center">
                 ENG <FaChevronDown />
-              </span>
-              <span className="flex item-center">
+              </div>
+              <span className="flex text-sm gap-2 justify-center items-center">
                 USD <FaChevronDown />
               </span>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full h-2/6 bg-blue-100 border-t border-gre  flex justify-center  text-white">
-        <div className="border border-white h-full w-4/5 flex justify-between">
-          <div className="border h-full w-1/5">Black Friday</div>
-          <div className="border h-full w-3/5">up to 59% off</div>
-          <div className="border h-full w-1/5">up to 59% off</div>
+
+      <div className="w-full h-2/6 bg-blue-100 border-t flex justify-center  text-white">
+        <div className="h-full w-4/5 flex justify-between">
+          <div className="h-full w-1/5 flex justify-start items-center">
+            <img src={Logo} alt="Logo" />
+          </div>
+
+          <div className="h-full w-3/5  flex justify-center items-center">
+            <input
+              type="text"
+              className="w-4/5 h-4/6 rounded pl-6"
+              placeholder="Search for anything..."
+            />
+          </div>
+          <div className="h-full w-1/6 flex justify-between items-center">
+            <img src={ShoppingCart} alt="Logo" className="h-1/2" />
+            <img src={Heart} alt="Logo" className="h-1/2" />
+            <img src={User} alt="Logo" className="h-1/2" />
+          </div>
         </div>
       </div>
+
       <div className="w-full h-1/4 border-grey-100 border-b flex justify-center">
         <div className="border border-black h-full w-4/5 flex">
           <div className="border h-full w-4/5">Black Friday</div>

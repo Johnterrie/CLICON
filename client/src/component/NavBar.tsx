@@ -1,8 +1,15 @@
 import React from "react";
-import Logo from "../../src/assests/Logo.png";
-import Heart from "../../src/assests/Heart.png";
-import ShoppingCart from "../../src/assests/ShoppingCartSimple.png";
-import User from "../../src/assests/User.png";
+import {
+  Logo,
+  Heart,
+  ShoppingCart,
+  User,
+  Phone,
+  ArrowRefresh,
+  HeadPhones,
+  MapPinLine,
+  Caution,
+} from "../../src/assests/index";
 import {
   FaLongArrowAltRight,
   FaTwitter,
@@ -33,7 +40,7 @@ const NavBar = () => {
           </div>
 
           <div className="h-full w-1/5 flex justify-end items-center ">
-            <button className="bg-warning-100 text-black border-0 h-3/5 w-4/5 cursor-pointer hover:text-yellow-900 flex justify-center items-center gap-2">
+            <button className="bg-warning-100 rounded text-black border-0 h-3/5 w-4/5 cursor-pointer hover:text-yellow-900 flex justify-center items-center gap-2">
               SHOP NOW <FaLongArrowAltRight />
             </button>
           </div>
@@ -87,17 +94,40 @@ const NavBar = () => {
             />
           </div>
           <div className="h-full w-1/6 flex justify-between items-center">
-            <img src={ShoppingCart} alt="Logo" className="h-1/2" />
-            <img src={Heart} alt="Logo" className="h-1/2" />
-            <img src={User} alt="Logo" className="h-1/2" />
+            <img src={ShoppingCart} alt="ShoppingCart" className="h-1/2" />
+            <img src={Heart} alt="Heart" className="h-1/2" />
+            <img src={User} alt="User" className="h-1/2" />
           </div>
         </div>
       </div>
 
-      <div className="w-full h-1/4 border-grey-100 border-b flex justify-center">
-        <div className="border border-black h-full w-4/5 flex">
-          <div className="border h-full w-4/5">Black Friday</div>
-          <div className="border h-full w-1/5">up to 59% off</div>
+      <div className="w-full h-2/5 border-grey-100 border-b flex justify-center">
+        <div className="h-full w-4/5 flex">
+          <div className="h-full w-4/5 flex justify-start items-center font-medium">
+            <button className="w-[15vw] h-4/6 bg-orange-main rounded">
+              All Categories
+            </button>
+
+            <div className="flex ml-4 gap-6">
+              <div className="flex gap-2">
+                <img src={MapPinLine} alt="mapLine" /> Track Order
+              </div>
+              <div className="flex gap-2">
+                <img src={ArrowRefresh} alt="mapLine" /> Compare
+              </div>
+              <div className="flex gap-2">
+                <img src={HeadPhones} alt="mapLine" />
+                Customer Support
+              </div>
+              <div className="flex gap-2">
+                <img src={Caution} alt="mapLine" /> Need Help
+              </div>
+            </div>
+          </div>
+          <div className="h-full w-1/5 flex justify-center items-center gap-3">
+            <img src={Phone} alt="Phone" />
+            <p>+234 71-738-022-56</p>
+          </div>
         </div>
       </div>
     </div>

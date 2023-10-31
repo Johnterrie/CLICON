@@ -23,7 +23,7 @@ import {
 
 const NavBar = () => {
   return (
-    <div className="w-full h-52">
+    <div className="w-full h-52 mb-8">
       <div className="w-full h-1/4 bg-black flex justify-center text-white font-medium">
         <div className="h-full w-4/5 flex justify-between">
           <div className="h-full w-1/5 flex justify-start items-center gap-2 ">

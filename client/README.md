@@ -2,7 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## LANDING PAGE
+
+![LANDING PAGE](../client/src/assests/01_Homepage.png)
 
 In the project directory, you can run:
 
